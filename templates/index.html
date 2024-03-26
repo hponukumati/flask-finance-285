@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Data Fetcher</title>
+</head>
+<body>
+    <h2>Enter Stock Symbol</h2>
+    <form method="post">
+        <input type="text" name="symbol" placeholder="Enter Symbol" required>
+        <input type="submit" value="Fetch Data">
+    </form>
+    {% if stock_data %}
+        <h3>Stock Data:</h3>
+        <pre>{{ stock_data }}</pre>
+    {% endif %}
+</body>
+</html>
